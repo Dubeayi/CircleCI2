@@ -1,0 +1,56 @@
+{
+  "name": "circleci2",
+  "version": "1.0.0",
+  "description": "Second part of assessment for CircleCI",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon server",
+    "build": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dubeayi/CircleCI2.git"
+  },
+  "author": "Dubeayi Okorie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dubeayi/CircleCI2/issues"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/reactTests/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/client/src/stylesheets/"
+    },
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/legacy_notes_and_workbook/",
+      "<rootDir>/client/src/stylesheets/"
+    ]
+  },
+  "homepage": "https://github.com/Dubeayi/CircleCI2#readme",
+  "dependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-react": "^7.13.13",
+    "@testing-library/jest-dom": "^5.12.0",
+    "axios": "^0.21.1",
+    "babel": "^6.23.0",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "body-parser": "^1.19.0",
+    "enzyme": "^3.11.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-test-renderer": "^17.0.2",
+    "server": "^1.0.33",
+    "webpack": "^5.37.1"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^11.2.7",
+    "jest": "^26.6.3",
+    "webpack-cli": "^4.7.0"
+  }
+}
