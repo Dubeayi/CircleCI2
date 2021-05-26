@@ -30,7 +30,7 @@ class App extends React.Component {
     } else if (buttonClicked) {
       content = (
         <div data-testid="message">
-          Hey there! Welcome to Dubeayi's Page!!! Feel free to look around!!!
+          Hey there! Welcome to Dubeayi's Page!!! Feel free to look around HERE!!!
         </div>
       )
     }

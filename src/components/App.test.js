@@ -10,7 +10,7 @@ test('to display correct message after click', async () => {
   // let messageElem = await waitFor( () => screen.getByTestId('message'))
   await (waitFor)( async () => {
     let messageElem = await findByTestId('message')
-    let expectedMessage = "Hey there! Welcome to Dubeayi's Page!!! Feel free to look around!!!"
+    let expectedMessage = "Hey there! Welcome to Dubeayi's Page!!! Feel free to look around HERE!!!"
     // expect(getByText(expectedMessage)).toBeInTheDocument()
     expect(messageElem).toHaveTextContent(expectedMessage)
   })
